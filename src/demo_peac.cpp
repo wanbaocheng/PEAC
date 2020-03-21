@@ -11,7 +11,7 @@ struct OrganizedImage3D {
         x = p[0];
         y = p[1];
         z = p[2];
-        return z > 0 && isnan(z)==0; //return false if current depth is NaN
+        return z > 0 && std::isnan(z)==0; //return false if current depth is NaN
     }
 };
 typedef ahc::PlaneFitter< OrganizedImage3D > PlaneFitter;
